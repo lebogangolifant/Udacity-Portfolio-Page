@@ -1,0 +1,246 @@
+* {
+  /* Makes width and height include padding, border */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #2d3c49;
+  text-transform: uppercase;
+}
+
+/* Header */
+
+h1 {
+  /* Disables h1 default bold styling */
+  font-weight: 200;
+  /* Browsers typically display h1 as 2em */
+  font-size: 2.6em;
+  margin-bottom: 0;
+}
+
+
+/* Adds a bit of space above subtitle (set h1 bottom margin to 0) */
+header h4 {
+  margin-top: 7px;
+}
+
+/* Top content */
+header {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 1em;
+  /* Vertically centers logo  */
+  align-items: center;
+}
+
+/* logo img */
+.logo {
+  width: auto;
+  height: 90px;
+  margin-right: auto;
+}
+
+/* Aligns h4 text in header to be flush right rather */
+.header-text {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Divider line/top image */
+
+hr {
+  background-color: #7d97ad;
+  max-width: 1000px;
+  margin-bottom: 1em;
+  border: none;
+  height: 3px;
+}
+
+.main-image {
+  max-width: 1000px;
+  height: auto;
+  margin-bottom: 1.5em;
+}
+
+/* Applies to content within <main> element (excludes header, footer) */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Projects section */
+
+.projects-header {
+  width: 100%;
+  text-align: left;
+  color: #7d97ad;
+}
+
+/* Applies to project section */
+.container-projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+/* Div containing single project's title, image, text */
+.project {
+  width: 300px;
+  height: auto;
+}
+
+.project p, h3 {
+  text-align: center;
+}
+
+/* Images cropped with 3:2 ratio, scaled resolution down to 600 x 400 */
+.project-image {
+  width: 300px;
+  height: auto;
+  border-radius: 8px
+}
+
+.project_link{
+
+    color: #7d97ad;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #02b3e4;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #7d97ad;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #2d3c49;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+
+/* Footer */
+
+footer {
+  text-align: center;
+  margin-top: 1em;
+  background-color: #2d3c49;
+  color: #fff;
+  padding: 2em;
+  font-size: 1.1em;
+}
+
+/* Remove default 1em margin-top */
+footer p {
+  margin-top: 0;
+}
+
+/* Applies to Font Awesome social icons */
+.fab {
+  margin: 0 0.5em;
+  color: #fff;
+}
+
+/* Changes social icon color to light grey on hover */
+.fab:hover {
+  color: #7d97ad;
+}
+
+
+/* Small laptops */
+@media screen and (max-width: 1199px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Tablets */
+@media screen and (max-width: 991px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+}
+
+/* Small devices (landscape phones) */
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 1.6em;
+  }
+
+  h2 {
+  font-size: 1.3em;
+  }
+
+  h3 {
+  font-size: 1.1em;
+  }
+
+  h4 {
+    font-size: 0.8em;
+  }
+
+  .logo {
+    height: 50px;
+    width: auto;
+  }
+
+  header {
+    margin: 0 1.5em 0 0.5em;
+  }
+
+  header, .container, footer {
+    max-width: 100%;
+  }
+
+  /* Must specify max-width for img even though parent */
+  .container img {
+    max-width: 100%;
+  }
+
+  /* Applies to project section (including header text) */
+  .container-projects {
+    /* Originally margin: 2em 0 */
+    margin: 1.5em 0 0 0;
+  }
+
+  /* Aligns portfolio header text flush left of portfolio rows */
+  .projects-header {
+    /* Increased width by 20px */
+    width: 320px;
+    margin: 10px auto 0 auto;
+  }
+
+  /* Div containing single project's title, image, text */
+  .project {
+    width: 320px;
+    height: auto;
+    /* Top, left/right, bottom. Centers projects (aligned left otherwise) */
+    margin: 0 auto 1.2em;
+  }
+
+  /* Images cropped with 3:2 ratio, scaled resolution down to 600 x 400 */
+  .project-image {
+    width: 320px;
+    height: auto;
+  }
+}
