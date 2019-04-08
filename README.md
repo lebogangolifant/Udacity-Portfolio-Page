@@ -5,6 +5,8 @@ Front-End Web Nano Degree Scholarship project 1. Create a portfolio site to show
 
    - [x] Replicate Design Mockup with HTML and CSS
    - [x] HTML5 semantic (structural) elements must be used to organize content.
+   - [x] Implemented proper HTML5 and CSS3 semantic, including Flexbox for design, and Media Queries for responsiveness.
+   
 
 ### Design Mockup
 
