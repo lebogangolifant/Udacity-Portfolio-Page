@@ -14,5 +14,5 @@ Front-End Web Nano Degree Scholarship project 1. Create a portfolio site to show
 
 ## Check the Project
 
- [View Online](https://lebogangolifant.github.io/Udacity-Portfolio-Page/.)
+ [View Online](https://lebogangolifant.github.io/portfolio-site/)
 
